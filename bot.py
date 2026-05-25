@@ -11,6 +11,7 @@ async def start(update, context):
     await update.message.reply_text("bot hidup ✔️")
 
 app = Application.builder().token(TOKEN).build()
+
 app.add_handler(CommandHandler("start", start))
 
 print("bot jalan...")
