@@ -1,7 +1,7 @@
 from telegram.ext import Application, CommandHandler
 import os
 
-TOKEN = os.getenv("8852023772:AAGUb_rZXsMxKIYqAvtOoH_5awpn6pk_D0g")
+TOKEN = os.getenv("8994829804:AAEaJue1IdXPqm7QzzPilVUh7nwRWxwqSEA")
 
 if not TOKEN:
     print("TOKEN kosong")
