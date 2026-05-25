@@ -2,18 +2,13 @@ from telegram.ext import Application, CommandHandler
 import os
 
 TOKEN = os.getenv("8994829804:AAEaJue1IdXPqm7QzzPilVUh7nwRWxwqSEA")
-
-if not TOKEN:
-    print("TOKEN kosong")
-    exit()
+print("TOKEN ADA:", bool(TOKEN))
 
 async def start(update, context):
     await update.message.reply_text("bot hidup ✔️")
 
 app = Application.builder().token(TOKEN).build()
-
 app.add_handler(CommandHandler("start", start))
 
-print("bot jalan...")
-
-app.run_polling(drop_pending_updates=True)
+print("BOT STARTING...")
+app.run_polling()
